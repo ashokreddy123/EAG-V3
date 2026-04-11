@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Work Timer</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class="drag-handle" id="drag-handle">
+        <div class="controls">
+            <button id="minimize-btn" title="Minimize">_</button>
+            <button id="restart-btn" title="Restart">↻</button>
+            <button id="close-btn" title="Close">X</button>
+        </div>
+    </div>
+    
+    <div class="timer-container">
+        <h2 id="time-display">25:00</h2>
+        <canvas id="hgCanvas" width="100" height="160"></canvas>
+        <!-- Completion overlay -->
+        <div id="done-overlay" style="display:none;">
+            <div class="done-emoji">🎉</div>
+            <div class="done-text">Deep Work<br>Complete!</div>
+            <button id="new-session-btn">New ↻</button>
+            <button id="done-close-btn">Close ✕</button>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>

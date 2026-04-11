@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Work Tracker</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="glass-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Deep Work</h2>
+            </div>
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+            </nav>
+            <button id="launch-timer-btn" class="glow-on-hover">Start Session</button>
+            
+            <div class="timer-config">
+                <h3>Timer Setup</h3>
+                <label>Minutes:</label>
+                <input type="number" id="timer-minutes" value="25" min="1" max="180">
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Analytics Dashboard</h1>
+                <div class="time-filters">
+                    <button class="active" data-filter="day">Today</button>
+                    <button data-filter="week">This Week</button>
+                    <button data-filter="month">This Month</button>
+                </div>
+            </header>
+
+            <div class="charts-grid">
+                <!-- Deep Work Chart -->
+                <div class="chart-card full-width">
+                    <h3>Deep Work (Minutes)</h3>
+                    <div id="deepWorkChart" class="bars-container"></div>
+                </div>
+
+                <!-- Total Device Time Chart -->
+                <div class="chart-card full-width">
+                    <h3>Total Device Time (Minutes)</h3>
+                    <div id="deviceTimeChart" class="bars-container"></div>
+                </div>
+
+                <!-- Websites Chart -->
+                <div class="chart-card">
+                    <h3>Top Websites Visited</h3>
+                    <div id="websiteChart" class="bars-container"></div>
+                </div>
+
+                <!-- Apps Chart -->
+                <div class="chart-card">
+                    <h3>Top Desktop Apps</h3>
+                    <div id="appChart" class="bars-container"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
