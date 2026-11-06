@@ -1,4 +1,4 @@
 # EAG V3 course
 
 
-ffr
+Building Agents from scratch.
